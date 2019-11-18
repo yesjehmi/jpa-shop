@@ -21,7 +21,6 @@ public class Member {
     @Embedded
     private Address address;
 
-
     //연관관계의 주인이 orders.member라는 것을 알려줌. (읽기전용임을 명시)
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
